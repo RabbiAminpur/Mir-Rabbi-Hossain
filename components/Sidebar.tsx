@@ -12,7 +12,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeSection, onSectionChange, secti
     <aside className="fixed left-0 top-0 bottom-0 z-50 w-16 md:w-24 flex flex-col items-center py-6 md:py-8 glass border-r border-white/10 dark:border-slate-800/50">
       <div className="mb-8 md:mb-12">
         <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-xl md:text-2xl shadow-lg shadow-blue-500/30">
-          ?
+          র
         </div>
       </div>
 
