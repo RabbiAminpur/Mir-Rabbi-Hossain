@@ -1,70 +1,79 @@
 
-import { Project, Skill, Experience } from './types';
+export const SITE_CONFIG = {
+  name: "মীর রাব্বি হোসেন",
+  title: "ব্যক্তিগত পোর্টফোলিও",
+  footer: "© ২০২৫ মীর রাব্বি হোসেন"
+};
 
+// Fixed error: Added HERO_CONTENT constant for Hero component
 export const HERO_CONTENT = {
   name: "রাব্বি হোসেন",
-  role: "UI / Web / App Designer",
-  intro: "আমি একজন ডিজিটাল ক্রিয়েটর এবং ডিজাইনার, যে আধুনিক ইউজার ইন্টারফেস এবং কার্যকর ওয়েব অ্যাপ্লিকেশন তৈরিতে বিশ্বাসী।",
+  intro: "আমি একজন ডিজিটাল ক্রিয়েটর এবং ডিজাইনার, যে কিনা আধুনিক প্রযুক্তি এবং নান্দনিক ডিজাইনের মেলবন্ধন ঘটাতে পছন্দ করে।",
   ctaWork: "আমার কাজ দেখুন",
   ctaContact: "যোগাযোগ করুন"
 };
 
+// Fixed error: Added ABOUT_CONTENT constant for About component
 export const ABOUT_CONTENT = {
-  title: "আমার সম্পর্কে",
-  description: "আমি রাব্বি হোসেন। আমি গত কয়েক বছর ধরে ইউজার ইন্টারফেস (UI) এবং ইউজার এক্সপেরিয়েন্স (UX) ডিজাইন নিয়ে কাজ করছি। আমার মূল লক্ষ্য হলো সহজ এবং দৃষ্টিনন্দন ডিজাইনের মাধ্যমে মানুষের ডিজিটাল অভিজ্ঞতাকে সহজতর করা।",
-  focus: ["UI/UX ডিজাইন", "ওয়েব অ্যাপ্লিকেশন", "রেসপন্সিভ লেআউট", "প্রম্পট ইঞ্জিনিয়ারিং"]
+  description: "আমি ডিজাইন এবং ডেভেলপমেন্টের প্রতি অনুরাগী। গত কয়েক বছর ধরে আমি বিভিন্ন প্রজেক্টে কাজ করেছি যেখানে আমি ইউজার ফ্রেন্ডলি ইন্টারফেস তৈরিতে মনোযোগ দিয়েছি। আমার লক্ষ্য হলো সাধারণ ব্যবহারকারীর জন্য জটিল প্রযুক্তিতে সহজবোধ্য করা।",
+  focus: [
+    "ইউজার ইন্টারফেস ডিজাইন",
+    "প্রোডাক্ট ডেভেলপমেন্ট",
+    "ক্রিয়েটিভ ব্র্যান্ডিং",
+    "ডিজিটাল স্ট্র্যাটেজি"
+  ]
 };
 
-export const SKILLS_DATA: Skill[] = [
-  { name: "UI Design", level: 95 },
-  { name: "Web Design", level: 90 },
-  { name: "App Concept", level: 85 },
-  { name: "React / Frontend", level: 80 },
-  { name: "GitHub Deployment", level: 85 },
-  { name: "Prompt Engineering", level: 90 }
+// Fixed error: Added SKILLS_DATA constant for Skills component
+export const SKILLS_DATA = [
+  { name: "React / Next.js", level: 90 },
+  { name: "UI/UX Design (Figma)", level: 85 },
+  { name: "Tailwind CSS", level: 95 },
+  { name: "TypeScript", level: 80 },
+  { name: "Node.js", level: 75 },
+  { name: "Graphic Design", level: 88 }
 ];
 
-export const PROJECTS_DATA: Project[] = [
+// Fixed error: Added PROJECTS_DATA constant for Projects component
+export const PROJECTS_DATA = [
   {
     id: 1,
-    title: "আধুনিক পোর্টফোলিও",
-    description: "একটি ক্লিন এবং মিনিমাল পোর্টফোলিও যা রিঅ্যাক্ট এবং টেলউইন্ড সিএসএস দিয়ে তৈরি।",
-    tech: ["React", "Tailwind", "Framer"],
-    github: "https://github.com",
+    title: "ই-কমার্স প্ল্যাটফর্ম",
+    description: "একটি পূর্ণাঙ্গ ই-কমার্স সমাধান যেখানে পেমেন্ট গেটওয়ে ইন্টিগ্রেশন এবং ইনভেন্টরি ম্যানেজমেন্ট সিস্টেম রয়েছে।",
+    tech: ["React", "Node.js", "MongoDB"],
     image: "https://picsum.photos/seed/project1/600/400"
   },
   {
     id: 2,
-    title: "ই-কমার্স ইন্টারফেস",
-    description: "ইউজার ফ্রেন্ডলি ই-কমার্স অ্যাপ ডিজাইন যেখানে কেনাকাটা হবে আরও সহজ।",
-    tech: ["UI Design", "Figma"],
-    github: "https://github.com",
+    title: "ট্রাভেল অ্যাপ",
+    description: "ভ্রমণপিপাসুদের জন্য একটি ওয়ান-স্টপ সলিউশন অ্যাপ যেখানে তারা সহজেই টিকিট বুক করতে পারে।",
+    tech: ["Flutter", "Firebase"],
     image: "https://picsum.photos/seed/project2/600/400"
   },
   {
     id: 3,
-    title: "ট্রাভেল অ্যাপ কনসেপ্ট",
-    description: "ভ্রমণ পিপাসুদের জন্য একটি চমৎকার মোবাইল অ্যাপ ডিজাইনের পরিকল্পনা।",
-    tech: ["UX Research", "Mobile UI"],
-    github: "https://github.com",
+    title: "পোর্টফোলিও ওয়েবসাইট",
+    description: "একটি আধুনিক এবং রেসপনসিভ পোর্টফোলিও টেম্পলেট যা ডেভেলপারদের জন্য আদর্শ।",
+    tech: ["Next.js", "Tailwind CSS"],
     image: "https://picsum.photos/seed/project3/600/400"
   }
 ];
 
-export const EXPERIENCE_DATA: Experience[] = [
+// Fixed error: Added EXPERIENCE_DATA constant for Experience component
+export const EXPERIENCE_DATA = [
   {
-    year: "২০২২ - বর্তমান",
-    title: "ফ্রিল্যান্স ডিজাইনার",
-    description: "বিভিন্ন গ্লোবাল ক্লায়েন্টের জন্য ইউজার ইন্টারফেস এবং ব্র্যান্ডিং নিয়ে কাজ করছি।"
+    year: "২০২৩ - বর্তমান",
+    title: "সিনিয়র ডিজাইনার, ক্রিয়েটিভ এজেন্সি",
+    description: "বিভিন্ন আন্তর্জাতিক ক্লায়েন্টের জন্য ইউজার ইন্টারফেস এবং ব্র্যান্ডিং নিয়ে কাজ করছি এবং টিম পরিচালনা করছি।"
   },
   {
-    year: "২০২১ - ২০২২",
-    title: "সেলফ লার্নিং জার্নি",
-    description: "ওয়েব ডিজাইন এবং ফ্রন্টএন্ড ডেভেলপমেন্টের খুঁটিনাটি হাতে-কলমে শেখা।"
+    year: "২০২১ - ২০২৩",
+    title: "জুনিয়র ওয়েব ডেভেলপার, টেক ফার্ম",
+    description: "ফ্রন্টএন্ড ডেভেলপমেন্ট এবং প্রজেক্ট ম্যানেজমেন্টে সহায়তা করেছি এবং একাধিক সফল প্রজেক্ট ডেলিভারি দিয়েছি।"
   },
   {
-    year: "২০২০",
-    title: "শুরুটা যখন থেকে",
-    description: "গ্রাফিক ডিজাইনের মাধ্যমে ভিজ্যুয়াল আর্টের জগতে আমার প্রবেশ।"
+    year: "২০২০ - ২০২১",
+    title: "ফ্রিল্যান্স গ্রাফিক ডিজাইনার",
+    description: "লোকাল ক্লায়েন্টদের জন্য লোগো এবং সোশ্যাল মিডিয়া ব্যানার তৈরি করেছি এবং ডিজাইনের প্রাথমিক ধাপগুলো রপ্ত করেছি।"
   }
 ];
