@@ -5,75 +5,80 @@ export const SITE_CONFIG = {
   footer: "© ২০২৫ মীর রাব্বি হোসেন"
 };
 
-// Fixed error: Added HERO_CONTENT constant for Hero component
-export const HERO_CONTENT = {
-  name: "রাব্বি হোসেন",
-  intro: "আমি একজন ডিজিটাল ক্রিয়েটর এবং ডিজাইনার, যে কিনা আধুনিক প্রযুক্তি এবং নান্দনিক ডিজাইনের মেলবন্ধন ঘটাতে পছন্দ করে।",
-  ctaWork: "আমার কাজ দেখুন",
-  ctaContact: "যোগাযোগ করুন"
-};
-
-// Fixed error: Added ABOUT_CONTENT constant for About component
-export const ABOUT_CONTENT = {
-  description: "আমি ডিজাইন এবং ডেভেলপমেন্টের প্রতি অনুরাগী। গত কয়েক বছর ধরে আমি বিভিন্ন প্রজেক্টে কাজ করেছি যেখানে আমি ইউজার ফ্রেন্ডলি ইন্টারফেস তৈরিতে মনোযোগ দিয়েছি। আমার লক্ষ্য হলো সাধারণ ব্যবহারকারীর জন্য জটিল প্রযুক্তিতে সহজবোধ্য করা।",
-  focus: [
-    "ইউজার ইন্টারফেস ডিজাইন",
-    "প্রোডাক্ট ডেভেলপমেন্ট",
-    "ক্রিয়েটিভ ব্র্যান্ডিং",
-    "ডিজিটাল স্ট্র্যাটেজি"
-  ]
-};
-
-// Fixed error: Added SKILLS_DATA constant for Skills component
-export const SKILLS_DATA = [
-  { name: "React / Next.js", level: 90 },
-  { name: "UI/UX Design (Figma)", level: 85 },
-  { name: "Tailwind CSS", level: 95 },
-  { name: "TypeScript", level: 80 },
-  { name: "Node.js", level: 75 },
-  { name: "Graphic Design", level: 88 }
+export const MENU_ITEMS = [
+  { name: 'হোম', icon: '🏠', href: '#' },
+  { name: 'আমার সম্পর্কে', icon: '👤', href: '#' },
+  { name: 'প্রজেক্ট', icon: '📂', href: '#' },
+  { name: 'যোগাযোগ', icon: '📧', href: '#' }
 ];
 
-// Fixed error: Added PROJECTS_DATA constant for Projects component
+// Added HERO_CONTENT to fix Error in Hero.tsx
+export const HERO_CONTENT = {
+  name: "মীর রাব্বি হোসেন",
+  intro: "আমি একজন ফুল-স্ট্যাক ডেভেলপার এবং UI/UX ডিজাইনার। আমি আধুনিক ওয়েব প্রযুক্তির মাধ্যমে চমৎকার ইউজার এক্সপেরিয়েন্স তৈরি করতে ভালোবাসি।",
+  ctaWork: "আমার কাজ দেখুন",
+  ctaContact: "কথা বলুন"
+};
+
+// Added ABOUT_CONTENT to fix Error in About.tsx
+export const ABOUT_CONTENT = {
+  description: "আমি বিগত ৩ বছর ধরে ওয়েব ডিজাইন এবং ডেভেলপমেন্টের সাথে জড়িত। আমি সবসময় নতুন নতুন প্রযুক্তি শিখতে এবং সেগুলোকে বাস্তব জীবনে প্রয়োগ করতে পছন্দ করি।",
+  focus: ["ইউজার ইন্টারফেস ডিজাইন", "ওয়েব অ্যাপ্লিকেশন ডেভেলপমেন্ট", "পারফরম্যান্স অপ্টিমাইজেশান", "মোবাইল রেসপন্সিভ ডিজাইন"]
+};
+
+// Added SKILLS_DATA to fix Error in Skills.tsx
+export const SKILLS_DATA = [
+  { name: "React / Next.js", level: 90 },
+  { name: "TypeScript", level: 85 },
+  { name: "Tailwind CSS", level: 95 },
+  { name: "Node.js", level: 80 },
+  { name: "UI/UX Design", level: 88 },
+  { name: "PostgreSQL", level: 75 }
+];
+
+// Added PROJECTS_DATA to fix Error in Projects.tsx
 export const PROJECTS_DATA = [
   {
     id: 1,
-    title: "ই-কমার্স প্ল্যাটফর্ম",
-    description: "একটি পূর্ণাঙ্গ ই-কমার্স সমাধান যেখানে পেমেন্ট গেটওয়ে ইন্টিগ্রেশন এবং ইনভেন্টরি ম্যানেজমেন্ট সিস্টেম রয়েছে।",
-    tech: ["React", "Node.js", "MongoDB"],
-    image: "https://picsum.photos/seed/project1/600/400"
+    title: "ই-কমার্স ড্যাশবোর্ড",
+    description: "একটি শক্তিশালী অ্যাডমিন প্যানেল যা বিক্রয় এবং ইনভেন্টরি ম্যানেজ করতে সাহায্য করে।",
+    tech: ["React", "Chart.js", "Tailwind"],
+    github: "#",
+    image: "https://picsum.photos/seed/project1/800/600"
   },
   {
     id: 2,
-    title: "ট্রাভেল অ্যাপ",
-    description: "ভ্রমণপিপাসুদের জন্য একটি ওয়ান-স্টপ সলিউশন অ্যাপ যেখানে তারা সহজেই টিকিট বুক করতে পারে।",
-    tech: ["Flutter", "Firebase"],
-    image: "https://picsum.photos/seed/project2/600/400"
+    title: "ভ্রমণ গাইড অ্যাপ",
+    description: "ভ্রমণপিপাসুদের জন্য একটি আধুনিক প্ল্যাটফর্ম যেখানে সব তথ্য এক জায়গায় পাওয়া যায়।",
+    tech: ["Next.js", "Firebase", "Leaflet"],
+    github: "#",
+    image: "https://picsum.photos/seed/project2/800/600"
   },
   {
     id: 3,
-    title: "পোর্টফোলিও ওয়েবসাইট",
-    description: "একটি আধুনিক এবং রেসপনসিভ পোর্টফোলিও টেম্পলেট যা ডেভেলপারদের জন্য আদর্শ।",
-    tech: ["Next.js", "Tailwind CSS"],
-    image: "https://picsum.photos/seed/project3/600/400"
+    title: "টাস্ক ম্যানেজমেন্ট টুল",
+    description: "টিমের উৎপাদনশীলতা বাড়াতে একটি স্মার্ট টাস্ক ট্র্যাকিং সিস্টেম।",
+    tech: ["TypeScript", "Node.js", "MongoDB"],
+    github: "#",
+    image: "https://picsum.photos/seed/project3/800/600"
   }
 ];
 
-// Fixed error: Added EXPERIENCE_DATA constant for Experience component
+// Added EXPERIENCE_DATA to fix Error in Experience.tsx
 export const EXPERIENCE_DATA = [
   {
     year: "২০২৩ - বর্তমান",
-    title: "সিনিয়র ডিজাইনার, ক্রিয়েটিভ এজেন্সি",
-    description: "বিভিন্ন আন্তর্জাতিক ক্লায়েন্টের জন্য ইউজার ইন্টারফেস এবং ব্র্যান্ডিং নিয়ে কাজ করছি এবং টিম পরিচালনা করছি।"
+    title: "সিনিয়র ফ্রন্টএন্ড ডেভেলপার",
+    description: "একটি মাল্টিন্যাশনাল কোম্পানিতে লিড ডেভেলপার হিসেবে দায়িত্ব পালন করছি।"
   },
   {
     year: "২০২১ - ২০২৩",
-    title: "জুনিয়র ওয়েব ডেভেলপার, টেক ফার্ম",
-    description: "ফ্রন্টএন্ড ডেভেলপমেন্ট এবং প্রজেক্ট ম্যানেজমেন্টে সহায়তা করেছি এবং একাধিক সফল প্রজেক্ট ডেলিভারি দিয়েছি।"
+    title: "জুনিয়র ওয়েব ডেভেলপার",
+    description: "শুরুতেই অনেকগুলো রিয়েল-ওয়ার্ল্ড প্রজেক্টে কাজ করার সুযোগ পেয়েছি।"
   },
   {
     year: "২০২০ - ২০২১",
-    title: "ফ্রিল্যান্স গ্রাফিক ডিজাইনার",
-    description: "লোকাল ক্লায়েন্টদের জন্য লোগো এবং সোশ্যাল মিডিয়া ব্যানার তৈরি করেছি এবং ডিজাইনের প্রাথমিক ধাপগুলো রপ্ত করেছি।"
+    title: "ইন্টার্নশিপ",
+    description: "প্রফেশনাল সফটওয়্যার ডেভেলপমেন্ট লাইফসাইকেল সম্পর্কে জ্ঞান অর্জন করেছি।"
   }
 ];
