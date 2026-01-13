@@ -1,84 +1,117 @@
 
 export const SITE_CONFIG = {
   name: "মীর রাব্বি হোসেন",
-  title: "ব্যক্তিগত পোর্টফোলিও",
+  title: "ডিজিটাল মেকার",
   footer: "© ২০২৫ মীর রাব্বি হোসেন"
 };
 
 export const MENU_ITEMS = [
-  { name: 'হোম', icon: '🏠', href: '#' },
-  { name: 'আমার সম্পর্কে', icon: '👤', href: '#' },
-  { name: 'প্রজেক্ট', icon: '📂', href: '#' },
-  { name: 'যোগাযোগ', icon: '📧', href: '#' }
-];
-
-// Added HERO_CONTENT to fix Error in Hero.tsx
-export const HERO_CONTENT = {
-  name: "মীর রাব্বি হোসেন",
-  intro: "আমি একজন ফুল-স্ট্যাক ডেভেলপার এবং UI/UX ডিজাইনার। আমি আধুনিক ওয়েব প্রযুক্তির মাধ্যমে চমৎকার ইউজার এক্সপেরিয়েন্স তৈরি করতে ভালোবাসি।",
-  ctaWork: "আমার কাজ দেখুন",
-  ctaContact: "কথা বলুন"
-};
-
-// Added ABOUT_CONTENT to fix Error in About.tsx
-export const ABOUT_CONTENT = {
-  description: "আমি বিগত ৩ বছর ধরে ওয়েব ডিজাইন এবং ডেভেলপমেন্টের সাথে জড়িত। আমি সবসময় নতুন নতুন প্রযুক্তি শিখতে এবং সেগুলোকে বাস্তব জীবনে প্রয়োগ করতে পছন্দ করি।",
-  focus: ["ইউজার ইন্টারফেস ডিজাইন", "ওয়েব অ্যাপ্লিকেশন ডেভেলপমেন্ট", "পারফরম্যান্স অপ্টিমাইজেশান", "মোবাইল রেসপন্সিভ ডিজাইন"]
-};
-
-// Added SKILLS_DATA to fix Error in Skills.tsx
-export const SKILLS_DATA = [
-  { name: "React / Next.js", level: 90 },
-  { name: "TypeScript", level: 85 },
-  { name: "Tailwind CSS", level: 95 },
-  { name: "Node.js", level: 80 },
-  { name: "UI/UX Design", level: 88 },
-  { name: "PostgreSQL", level: 75 }
-];
-
-// Added PROJECTS_DATA to fix Error in Projects.tsx
-export const PROJECTS_DATA = [
-  {
-    id: 1,
-    title: "ই-কমার্স ড্যাশবোর্ড",
-    description: "একটি শক্তিশালী অ্যাডমিন প্যানেল যা বিক্রয় এবং ইনভেন্টরি ম্যানেজ করতে সাহায্য করে।",
-    tech: ["React", "Chart.js", "Tailwind"],
-    github: "#",
-    image: "https://picsum.photos/seed/project1/800/600"
+  { 
+    name: 'হোম', 
+    icon: '🏠', 
+    href: '#', 
+    color: 'from-blue-50 to-blue-100',
+    accent: 'bg-blue-600'
   },
-  {
-    id: 2,
-    title: "ভ্রমণ গাইড অ্যাপ",
-    description: "ভ্রমণপিপাসুদের জন্য একটি আধুনিক প্ল্যাটফর্ম যেখানে সব তথ্য এক জায়গায় পাওয়া যায়।",
-    tech: ["Next.js", "Firebase", "Leaflet"],
-    github: "#",
-    image: "https://picsum.photos/seed/project2/800/600"
+  { 
+    name: 'গ্যালারি', 
+    icon: '🎨', 
+    href: '#', 
+    color: 'from-purple-50 to-purple-100',
+    accent: 'bg-purple-600'
   },
-  {
-    id: 3,
-    title: "টাস্ক ম্যানেজমেন্ট টুল",
-    description: "টিমের উৎপাদনশীলতা বাড়াতে একটি স্মার্ট টাস্ক ট্র্যাকিং সিস্টেম।",
-    tech: ["TypeScript", "Node.js", "MongoDB"],
-    github: "#",
-    image: "https://picsum.photos/seed/project3/800/600"
+  { 
+    name: 'প্রজেক্ট', 
+    icon: '🚀', 
+    href: '#', 
+    color: 'from-emerald-50 to-emerald-100',
+    accent: 'bg-emerald-600'
+  },
+  { 
+    name: 'যোগাযোগ', 
+    icon: '✉️', 
+    href: '#', 
+    color: 'from-orange-50 to-orange-100',
+    accent: 'bg-orange-600'
   }
 ];
 
-// Added EXPERIENCE_DATA to fix Error in Experience.tsx
+/**
+ * Fix: Added HERO_CONTENT to satisfy Hero.tsx import
+ */
+export const HERO_CONTENT = {
+  intro: "মীর রাব্বি হোসেনের ডিজিটাল স্পেসে আপনাকে স্বাগতম। আমি আধুনিক এবং মিনিমালিস্ট ডিজাইন করতে ভালোবাসি যা ব্যবহারকারীর অভিজ্ঞতাকে সহজ করে তোলে।",
+  ctaWork: "আমার কাজ দেখুন",
+  ctaContact: "যোগাযোগ করুন"
+};
+
+/**
+ * Fix: Added ABOUT_CONTENT to satisfy About.tsx import
+ */
+export const ABOUT_CONTENT = {
+  description: "আমি একজন ফ্রন্টএন্ড ডেভেলপার এবং ডিজাইনার। আমি বিশ্বাস করি একটি ভালো ডিজাইন শুধু দেখতে সুন্দর নয়, সেটি কার্যকরীও হওয়া উচিত। প্রযুক্তির সাথে সৃজনশীলতার সমন্বয় ঘটিয়ে আমি আধুনিক ওয়েব অ্যাপ্লিকেশন তৈরি করি।",
+  focus: ["ইউজার ইন্টারফেস ডিজাইন", "রেসপন্সিভ ওয়েব ডেভেলপমেন্ট", "ইউজার এক্সপেরিয়েন্স রিসার্চ", "পারফরম্যান্স অপ্টিমাইজেশন"]
+};
+
+/**
+ * Fix: Added SKILLS_DATA to satisfy Skills.tsx import
+ */
+export const SKILLS_DATA = [
+  { name: 'React & Next.js', level: 92 },
+  { name: 'TypeScript', level: 88 },
+  { name: 'Tailwind CSS', level: 95 },
+  { name: 'UI/UX Design', level: 80 },
+  { name: 'Node.js', level: 75 },
+  { name: 'Figma', level: 85 }
+];
+
+/**
+ * Fix: Added PROJECTS_DATA to satisfy Projects.tsx import
+ */
+export const PROJECTS_DATA = [
+  {
+    id: 1,
+    title: 'মডার্ন ই-কমার্স',
+    description: 'এটি একটি পূর্ণাঙ্গ অনলাইন শপিং প্ল্যাটফর্ম যেখানে ইউজাররা সহজেই পণ্য কিনতে পারেন।',
+    tech: ['Next.js', 'Tailwind', 'Stripe'],
+    github: '#',
+    image: 'https://picsum.photos/seed/shop/800/600'
+  },
+  {
+    id: 2,
+    title: 'ক্রিয়েটিভ পোর্টফোলিও',
+    description: 'একজন শিল্পীর কাজের গ্যালারি এবং ডাইনামিক পোর্টফোলিও ওয়েবসাইট।',
+    tech: ['React', 'Framer Motion', 'PostCSS'],
+    github: '#',
+    image: 'https://picsum.photos/seed/portfolio/800/600'
+  },
+  {
+    id: 3,
+    title: 'টাস্ক ম্যানেজমেন্ট অ্যাপ',
+    description: 'ব্যক্তিগত কাজের ট্র্যাকিং এবং টিমের প্রোডাক্টিভিটি বাড়ানোর জন্য একটি টুল।',
+    tech: ['TypeScript', 'Firebase', 'Zustand'],
+    github: '#',
+    image: 'https://picsum.photos/seed/task/800/600'
+  }
+];
+
+/**
+ * Fix: Added EXPERIENCE_DATA to satisfy Experience.tsx import
+ */
 export const EXPERIENCE_DATA = [
   {
-    year: "২০২৩ - বর্তমান",
-    title: "সিনিয়র ফ্রন্টএন্ড ডেভেলপার",
-    description: "একটি মাল্টিন্যাশনাল কোম্পানিতে লিড ডেভেলপার হিসেবে দায়িত্ব পালন করছি।"
+    year: '২০২৩ - ২০২৫',
+    title: 'সিনিয়র ইউআই ডেভেলপার',
+    description: 'একটি শীর্ষস্থানীয় আইটি ফার্মে প্রজেক্ট আর্কিটেকচার এবং ফ্রন্টএন্ড ম্যানেজমেন্টে কাজ করেছি।'
   },
   {
-    year: "২০২১ - ২০২৩",
-    title: "জুনিয়র ওয়েব ডেভেলপার",
-    description: "শুরুতেই অনেকগুলো রিয়েল-ওয়ার্ল্ড প্রজেক্টে কাজ করার সুযোগ পেয়েছি।"
+    year: '২০২১ - ২০২৩',
+    title: 'ওয়েব ডেভেলপার',
+    description: 'বিভিন্ন স্টার্টআপের জন্য ডাইনামিক এবং রেসপন্সিভ ওয়েব ইন্টারফেস তৈরি করেছি।'
   },
   {
-    year: "২০২০ - ২০২১",
-    title: "ইন্টার্নশিপ",
-    description: "প্রফেশনাল সফটওয়্যার ডেভেলপমেন্ট লাইফসাইকেল সম্পর্কে জ্ঞান অর্জন করেছি।"
+    year: '২০১৯ - ২০২১',
+    title: 'ফ্রিল্যান্স ডিজাইনার',
+    description: 'ইউজার এক্সপেরিয়েন্সের ওপর ভিত্তি করে অসংখ্য ডিজিটাল প্রোডাক্ট ডিজাইন করেছি।'
   }
 ];
