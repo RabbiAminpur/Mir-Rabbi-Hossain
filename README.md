@@ -1,11 +1,23 @@
-<div align="center">
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+# Rabbi Hossain Portfolio
 
-  <h1>Built with AI Studio</h2>
+This is a professional personal portfolio website designed for **Rabbi Hossain**, focusing on UI/Web/App design.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Deployment to GitHub Pages
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+1. Build the project (if using a build step) or simply upload the files to a repository.
+2. Go to repository **Settings** -> **Pages**.
+3. Select the `main` branch as the source and click **Save**.
+4. Your site will be live at `https://[your-username].github.io/[repo-name]/`.
 
-</div>
+## Font Usage
+The website uses the **SolaimanLipi** font, which is essential for correct Bengali rendering. 
+- Source: `https://fonts.maateen.me/solaiman-lipi/font.css`
+- Applied globally via CSS in `index.html`.
+
+## Features
+- **Bengali-First UI**: Optimized for native speakers.
+- **Dark/Light Mode**: Smooth transition between themes.
+- **Glassmorphism**: Modern aesthetic with blur effects.
+- **Responsive**: Mobile, tablet, and desktop ready.
+- **Dynamic Content**: Data-driven components for projects and skills.
